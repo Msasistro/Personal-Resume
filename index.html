@@ -1,57 +1,143 @@
+ <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Resume Website </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Website</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="http://font.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200,0,300,0,400,0,500,0,600,0,700,1,100,1,200,1,300,1,400,1,500,1,600,1,700&display=swap" rel="stylesheet">
 
-	<!-- API form cdnjs //-->
-
+	<link rel ="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	
 </head>
 <body>
-	<!-- Hero section start -->
-	<div class = "hero" >
-		<nav>
-			<h2 class ="logo">Personal <span>Resume</span> </h2>
-			<ul><!-- I need to work on the section links -->
-				<li><a href="#home">home</a></li>
-				<li><a href="#about">about </a></li>
-				<li><a href="#projects">projects</a></li>
-				<li><a href="#skills">skills</a></li>
-				<li><a href="#contacts">contacts</a></li>
-			</ul>
-		</nav>
-		<div class="home" id="home">
+	<!-- header section -->
+	<header>
+		<a href="#" class="logo">Personal Resume</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar"><!-- navigation bar -->
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About </a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contacts">Contacts</a></li>
+		</ul>
+		<a href="CV.docx" class="h-btn">Download CV</a>
+		
+	</header>
+	<!-- home section -->
+	<section class="home" id="home">
+		<div class="home-text" >
 			<h4>Hello, my name is </h4>
 			<h1>Clement K.S <span >Mokoena</span></h1>
-			<h3>I am a Software Developer</h3>
+			<h3>I am a Software Developer student</h3>
 			
 		</div>
-	</div>
-<!-- About section -->
-<section  class="about">
-	<div class="about_main" id="about">
-		<img  src="formal.jpg">
+		
+	</section>
+	<!-- about section -->
+
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="formal.jpg">
+		</div>
+
 		<div class="about-text">
 			<h2>About Me</h2>
 			<h5 >Software <span>Developer student</span></h5>
 			<p>I am a software developer student looking for an internship/WIL(Work Intergrated Learning). I am flexible,adapatable and capable of learning new thing while pursing a task .while I am self-relient I am group orientated and believe you can always learn something from someone.I learned the fundamentals of System Development Life Cycle and the basic fundementals of programming along with develop and design databases. My main programming Languages are C++,Python and main Database technologies are SQL,MySQL,PL/SQL other skills are HTML,CSS.</p>
-			<button type="submit" onclick="window.open('Personal Resume.pdf')">Download CV</button>
+			<a href="CV.docx" class="btn">Download CV</a>
 			
 		</div>
 		
-	</div>
-</section>
-<!-- Projects -->
-<div class="Projects" id="projects">
-	<div class="title">
+	</section>
+	<!-- skills -->
+
+	<section class="Skills" id="skills">
+		<div class="center">
+			<h2>My Skills </h2>
+			<p>I can make systems and databases</p>
+		</div>
+
+		<div class="skills-content">
+			<div class="row">
+				<i class='bx bx-code-alt'></i>
+				<h3>C++</h3>
+				<p> object-orientated concepts and principles using the C++ programming language <br>use own and pre-defined classes in programs, use structures such as control and 
+				interactive, use iterative statements in a program, manipulate strings and characters in a program, use arrays 
+				in a program, use inheritance, polymorphism and exception handling mechanisms, and understand graphical 
+				user interface design. </p>
+
+			</div>
+		</div>
+
+		<div class="skills-content">
+			<div class="row">
+				<i class='bx bx-code-alt'></i>
+				<h3>Python</h3>
+				<p>I knows the universal concepts of computer programming, including variables, data structures, algorithms, control flow, functions, and exceptions<br>
+				can proficiently use the developer tools, the runtime environment, and the syntax and semantics of the Python language<br>
+				can use fundamental programming techniques, best practices, customs, and vocabulary, including the most common standard library functions in Python 3<br>
+				can write Python programs using standard language infrastructure, and knows the means by which to resolve typical implementation problems<br>
+				knows how to work with modules and packages, process text and binary files, and use generators, iterators, and closures<br>
+				understands the fundamentals of object-oriented programming (OOP) and the way they are adopted in Python.</p>
+
+			</div>
+		</div>
+
+		<div class="skills-content">
+			<div class="row">
+				<i class='bx bx-code-alt'></i>
+				<h3>SQL</h3>
+				<p>Oracle and SQL <br> This includes standard queries, joins, functions, 
+				sub-queries, report writing, creation of tables and views, data manipulation using the Oracle courseware and 
+				the Oracle software also I know how to create and maintain database objects and how to store, retrieve 
+				and manipulate data</p>
+
+			</div>
+		</div>
+
+		<div class="skills-content">
+			<div class="row">
+				<i class='bx bx-code-alt'></i>
+				<h3>MySQL</h3>
+				<p>I can do stuff</p>
+
+			</div>
+		</div>
+
+
+		<div class="skills-content">
+			<div class="row">
+				<i class='bx bx-code-alt'></i>
+				<h5>NDG Linux </h5>
+				<p> I have the ability to work with files,directories,terminal along with the built in features that come with linux terminal</p><!-- add proper words -->
+			</div>	
+		</div>
+
+		<div class="skills-content">
+			<div class="row">
+				<i class='bx bx-code-alt'></i>
+				<h5>HTML & CSS</h5>
+				<p>Decent page structural development and styling</p><!-- add proper words -->
+			</div>	
+		</div>
+	</section>
+
+	<!-- Projects -->
+<section class="Projects" id="projects">
+	<div class="project-center">
 		<h2>My Projects</h2>
 		
 	</div>
-	<div class="box">
-		<div class="card">
+	<div class="project-content">
+		<div class="row">
 			<i class="bars"></i>
 			<h5>School Management System</h5>
 			<div class="project-skills">
@@ -60,7 +146,7 @@
 			</div>
 		</div>
 
-		<div class="card">
+		<div class="row">
 			<i class="bars"></i>
 			<h5>NextFarm.shop</h5>
 			<div class="project-skills">
@@ -72,73 +158,17 @@
 			</div>
 		</div>
 
-		<div class="card">
+		<div class="row">
 			<i class="bars"></i>
 			<h5>Restaurant Login and Register Page</h5>
 			<div class="project-skills">
-				<p>A login and register form  for a restaurant</p><!-- add proper words -->
-				<p>Technologies used are C++,Winform and MSSQL</p>
+				<p>A register form that add the details of a user to the database ,with those details a user can login to the restaurant application</p><!-- add proper words -->
+				<p>Technologies used are C++,Winform and MS SQL</p>
 			</div>
 		</div>
 	</div>
-</div>
-<!--  Skills -->
-<div class="skills" id="skills">
-	<div class="skills-title">
-		<h2>Skills</h2>
-		
-	</div>
-	<div class="box">
-		<div class="card">
-			<i class="bars"></i>
-			<h5>C++</h5>
-			<div class="rizz">
-				<p>I have grasped the basic fundementals that was taught from TUT along with more advance programming like OO  </p><!-- add proper words -->
-				
-			</div>
-		</div>
-
-		<div class="card">
-			<i class="bars"></i>
-			<h5>SQL</h5>
-			<div class="rizz">
-				<p>Familiar with SQL,PL/SQL,MySQL and obtained a SQL certificate from SoloLearn.<!-- add proper words -->
-				<p>I can create and design database,properly use commands like insert,delete update and create triggers  </p>
-				</p>
-			</div>
-		</div>
-
-		<div class="card">
-			<i class="bars"></i>
-			<h5>Python</h5>
-			<div class="rizz">
-				<p>Obtained Cisco Programming Essential in Python certificate and grasped the basic fundementals ,OO,PIP and package control</p><!-- add proper words -->
-				
-			</div>
-		</div>
-
-		<div class="card">
-			<i class="bars"></i>
-			<h5>Linux ubuntu</h5>
-			<div class="rizz">
-				<p> I have the ability to work with files,directories,terminal along with the built in features that come with linux terminal</p><!-- add proper words -->
-				
-			</div>
-		</div>
-
-		<div class="card">
-			<i class="bars"></i>
-			<h5>HTML & CSS</h5>
-			<div class="rizz">
-				<p>Decent page development and styling</p><!-- add proper words -->
-				
-			</div>
-		</div>
-
-	</div>
-	
-</div>
-<!-- Contacts -->
+</section>
+<!-- contacts -->
 <div class="contact-me" id="contacts">
 	<p>Get in touch with me</p>
 	<a class="button-mail" href="mailto:mokoenacks@gmail.com?subject=Internship offer">Click to Email me</a>
@@ -158,6 +188,8 @@
 		<a href="https://github.com/Msasistro" target="_blank"><i class="fa-brands fa-github"></i></i></i></a>
 	</div>
 </footer>
-	
+	<!-- link to js -->
+	<script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
